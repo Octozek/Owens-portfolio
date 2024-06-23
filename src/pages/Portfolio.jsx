@@ -5,9 +5,9 @@ function Portfolio() {
   const projects = [
     {
       title: 'Project 1',
-      image: 'path/to/image1.jpg',
+      image: 'my imgpath.jpg',
       deployedLink: 'https://deployedlink1.com',
-      githubLink: 'https://github.com/user/project1'
+      githubLink: 'https://github.com/Octozek/project1'
     },
     // Add five more projects similarly
   ];
