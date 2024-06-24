@@ -1,18 +1,18 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
+import Footer from './components/Footer';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import AboutMe from './pages/AboutMe';
 import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
 import Resume from './pages/Resume';
-import Footer from './components/Footer';
 
 function App() {
   return (
     <Router>
       <div id="root">
         <Header />
-        <main style={{ flex: 1 }}>
+        <main>
           <Routes>
             <Route path="/" element={<AboutMe />} />
             <Route path="/portfolio" element={<Portfolio />} />

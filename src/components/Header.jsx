@@ -1,11 +1,14 @@
-import React from 'react';
-import Navigation from './Navigation';
+import React from "react";
+import Navigation from "./Navigation";
+import "../index.css";
 
 function Header() {
   return (
     <header>
-      <h1>Ezekiel Owens</h1>
-      <Navigation />
+      <div className="header-container">
+        <div className="logo">Ezekiel Owens</div>
+        <Navigation />
+      </div>
     </header>
   );
 }

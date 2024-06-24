@@ -1,57 +1,144 @@
-html, body {
-  height: 100%;
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Main style settings */
+body {
+  background-color: #ffffff; /* Light background */
+  color: #000000; /* Dark text */
+  font-family: 'Arial', sans-serif;
   margin: 0;
   display: flex;
   flex-direction: column;
-}
-
-body {
-  background-color: #000;
-  color: #fff;
-  font-family: 'Arial', sans-serif;
+  min-height: 100vh;
 }
 
 #root {
-  flex: 1;
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
 }
 
 header, footer {
-  background-color: #333;
+  background-color: #2A473B; /* Dark green */
   padding: 1rem;
   text-align: center;
+  color: #ACAD94; /* Light olive text */
+}
+
+main {
+  flex: 1; /* This allows the main content to grow and push the footer down */
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 5rem; /* Increase font size */
+  font-family: 'Roboto', sans-serif; /* Professional font style */
+  color: #ACAD94; /* Dark brown text */
 }
 
 nav ul {
   list-style: none;
   padding: 0;
+  margin: 0;
+  display: flex;
 }
 
 nav ul li {
-  display: inline;
   margin: 0 1rem;
 }
 
 nav ul li a {
-  color: #fff;
+  color: #ACAD94; /* Light olive for links */
   text-decoration: none;
+  font-family: 'Roboto', sans-serif; /* Professional font style */
+  font-size: 2rem;
 }
 
 nav ul li a.active {
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid #ACAD94; /* Highlight active link */
 }
 
 .project {
-  border: 1px solid #444;
+  border: 1px solid #502419; /* Dark brown border */
   padding: 1rem;
   margin: 1rem;
+  background-color: #ACAD94; /* Light olive background */
+  color: #502419; /* Dark brown text */
 }
 
 .project img {
   max-width: 100%;
+  border: 1px solid #502419; /* Dark brown border for images */
 }
 
 .error {
   color: red;
+}
+
+/* Footer styles */
+footer {
+  background-color: #2A473B; /* Dark green */
+  padding: 1rem;
+  text-align: center;
+  color: #ACAD94; /* Light olive text */
+  width: 100%;
+  margin-top: auto; /* Push footer to the bottom */
+}
+
+.social-icons a {
+  color: #ACAD94; /* Light olive for links */
+  margin: 0 0.5rem;
+  font-size: 2rem;
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.social-icons a:hover {
+  color: #ffffff; /* Change color on hover */
+}
+
+/* Contact form */
+form {
+  background-color: #ACAD94; /* Light olive background */
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #502419; /* Dark brown border */
+  border-radius: 4px;
+  background-color: #ffffff; /* White background */
+  color: #2A473B; /* Dark green text */
+}
+
+form input[type="submit"] {
+  background-color: #502419; /* Dark brown */
+  color: #ACAD94; /* Light olive text */
+  border: none;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+form input[type="submit"]:hover {
+  background-color: #3f1e16; /* Darker brown background on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .logo {
+    font-size: 3rem; /* Smaller font size for mobile */
+  }
+
+  nav ul li a {
+    font-size: 1.5rem; /* Smaller font size for mobile */
+  }
 }
