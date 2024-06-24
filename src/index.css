@@ -34,6 +34,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0 2rem; /* Add padding to adjust the position */
 }
 
 .logo {
@@ -42,6 +43,8 @@ main {
   color: #ACAD94; /* Dark brown text */
 }
 
+
+/* Navigation styles */
 nav ul {
   list-style: none;
   padding: 0;
@@ -50,7 +53,7 @@ nav ul {
 }
 
 nav ul li {
-  margin: 0 1rem;
+  margin: 0 2rem; /* Increase the margin to add more space between nav items */
 }
 
 nav ul li a {
@@ -183,6 +186,30 @@ form input[type="submit"]:hover {
   background-color: #3f1e16; /* Darker brown background on hover */
 }
 
+
+
+/* About Me styles */
+.about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2rem;
+}
+
+.about-me img {
+  border-radius: 50%;
+  max-width: 150px;
+  margin-top: 1rem;
+}
+
+.about-me-content {
+  max-width: 600px;
+}
+
+.about-me h2 {
+  margin-top: 0;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .logo {
@@ -192,30 +219,18 @@ form input[type="submit"]:hover {
   nav ul li a {
     font-size: 1.5rem; /* Smaller font size for mobile */
   }
-}
 
-/* About Me styles */
-.about-me {
-  text-align: center;
-  padding: 2rem;
-}
+  .about-me {
+    flex-direction: column;
+    align-items: center;
+  }
 
-.profile-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+  .about-me img {
+    margin: 0 0 1rem 0;
+  }
 
-.profile-img {
-  border-radius: 50%;
-  width: 150px; /* Adjust size as needed */
-  height: 150px;
-  object-fit: cover;
-  margin-top: 1rem;
-}
-
-.about-description {
-  margin-top: 1rem;
-  font-size: 1.2rem;
-  color: #000000; /* Dark text */
+  .about-me-content {
+    max-width: 100%;
+    text-align: center;
+  }
 }
