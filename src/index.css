@@ -1,6 +1,7 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+
 /* Main style settings */
 body {
   background-color: #ffffff; /* Light background */
@@ -63,17 +64,67 @@ nav ul li a.active {
   border-bottom: 2px solid #ACAD94; /* Highlight active link */
 }
 
-.project {
-  border: 1px solid #502419; /* Dark brown border */
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Responsive grid */
+  gap: 1rem; /* Space between grid items */
   padding: 1rem;
-  margin: 1rem;
+}
+
+.project {
+  position: relative;
+  border: 1px solid #502419; /* Dark brown border */
   background-color: #ACAD94; /* Light olive background */
   color: #502419; /* Dark brown text */
+  transition: transform 0.3s;
+}
+
+.project:hover {
+  transform: scale(1.05);
 }
 
 .project img {
-  max-width: 100%;
-  border: 1px solid #502419; /* Dark brown border for images */
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #502419; /* Dark brown border for images */
+}
+
+.project .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.project:hover .overlay {
+  opacity: 1;
+}
+
+.overlay a {
+  color: #ffffff; /* White text */
+  text-decoration: none;
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+  display: flex;
+  align-items: center;
+}
+
+.overlay a:hover {
+  color: #ffea00; /* Bright yellow */
+}
+
+.overlay a i {
+  margin-right: 0.5rem;
 }
 
 .error {
@@ -141,4 +192,30 @@ form input[type="submit"]:hover {
   nav ul li a {
     font-size: 1.5rem; /* Smaller font size for mobile */
   }
+}
+
+/* About Me styles */
+.about-me {
+  text-align: center;
+  padding: 2rem;
+}
+
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-img {
+  border-radius: 50%;
+  width: 150px; /* Adjust size as needed */
+  height: 150px;
+  object-fit: cover;
+  margin-top: 1rem;
+}
+
+.about-description {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: #000000; /* Dark text */
 }

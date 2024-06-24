@@ -1,22 +1,23 @@
 import React from 'react';
 import Project from '../components/Project';
+import projects from '../projectsData'; // Adjust the path based on your project structure
 
 function Portfolio() {
-  const projects = [
-    {
-      title: 'Project 1',
-      image: 'my imgpath.jpg',
-      deployedLink: 'https://deployedlink1.com',
-      githubLink: 'https://github.com/Octozek/project1'
-    },
-    // Add five more projects similarly
-  ];
-
   return (
     <section>
-      {projects.map((project, index) => (
-        <Project key={index} {...project} />
-      ))}
+      <h2>Portfolio</h2>
+      <div className="projects-container">
+        {projects.map((project, index) => (
+          <Project
+            key={index}
+            image={project.image}
+            repoLink={project.repoLink}
+            websiteLink={project.websiteLink}
+            repoName={project.repoName}
+            websiteName={project.websiteName}
+          />
+        ))}
+      </div>
     </section>
   );
 }
