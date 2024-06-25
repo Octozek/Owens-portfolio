@@ -2,15 +2,33 @@ import React from 'react';
 
 function Resume() {
   return (
-    <section>
-      <a href="path/to/your/resume.pdf" download>Download Resume</a>
-      <ul>
-        <li>Proficiency 1</li>
-        <li>Proficiency 2</li>
-        <li>Proficiency 3</li>
-        <li>Proficiency 4</li>
-        <li>Proficiency 5</li>
-      </ul>
+    <section className="resume-section">
+      <h2>Resume</h2>
+      <a href="/path/to/your/resume.pdf" className="download-resume" download>
+        Download Resume
+      </a>
+      <div className="proficiency-section">
+        <h3>Front-end Proficiencies</h3>
+        <ul className="proficiency-list">
+          <li>HTML & CSS</li>
+          <li>JavaScript</li>
+          <li>jQuery</li>
+          <li>Responsive Design</li>
+          <li>React</li>
+          <li>Bootstrap</li>
+        </ul>
+      </div>
+      <div className="proficiency-section">
+        <h3>Back-end Proficiencies</h3>
+        <ul className="proficiency-list">
+          <li>APIs</li>
+          <li>Node</li>
+          <li>Express</li>
+          <li>MySQL, Sequelize</li>
+          <li>REST</li>
+          <li>GraphQL</li>
+        </ul>
+      </div>
     </section>
   );
 }
