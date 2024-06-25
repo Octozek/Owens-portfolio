@@ -1,5 +1,5 @@
 import React from 'react';
-import '../index.css'; // Ensure the correct path
+import '../index.css';
 
 function AboutMe() {
   return (
