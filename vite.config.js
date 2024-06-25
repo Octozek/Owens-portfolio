@@ -8,6 +8,7 @@ export default defineConfig({
     open: true
   },
   build: {
+    outDir: 'build', // Specify the output directory
     rollupOptions: {
       input: './index.html',
     },
