@@ -6,7 +6,7 @@ function AboutMe() {
     <section className="about-me">
       <h2>About Me</h2>
       <div className="profile-container">
-        <img src="/src/assets/images/My-profile.JPG" alt="Ezekiel Owens" className="profile-img" />
+        <img src="/assets/images/My-profile.JPG" alt="Ezekiel Owens" className="profile-img" />
         <p className="about-description">
           Hello, I'm Ezekiel Caleb Owens, a dedicated full-stack developer with a passion for building dynamic and responsive single-page applications. From a young age, I've been fascinated by coding, and I am thrilled to have turned this passion into my profession. 
         </p>
