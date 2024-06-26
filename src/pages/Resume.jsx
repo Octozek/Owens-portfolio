@@ -1,4 +1,5 @@
 import React from 'react';
+import '../index.css'; // Ensure the correct path
 
 function Resume() {
   return (
