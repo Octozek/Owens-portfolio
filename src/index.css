@@ -269,12 +269,23 @@ form input[type="submit"]:hover {
     font-size: 3rem; /* Smaller font size for mobile */
   }
 
+  nav ul {
+    flex-direction: column; /* Stack navigation items vertically on mobile */
+  }
+
+  nav ul li {
+    margin: 1rem 0; /* Add margin between vertical nav items */
+  }
+
   nav ul li a {
     font-size: 1.5rem; /* Smaller font size for mobile */
   }
 
+  .projects-container {
+    grid-template-columns: 1fr; /* Single column for projects on mobile */
+  }
+
   .about-me {
-    flex-direction: column;
     align-items: center;
   }
 
