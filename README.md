@@ -57,11 +57,11 @@ Once the development server is running, you can view the portfolio by navigating
 
 *About Me Section*
 
-![About Me Section](public/src/assets/images/about-me-screenshot.png)
+![About Me Section](public/assets/images/about-me-screenshot.png)
 
 *Portfolio Section*
 
-![Portfolio Section](public/src/assets/images/portfolio-screenshot.png)
+![Portfolio Section](public/assets/images/portfolio-screenshot.png)
 
 ## Deployed Application
 The portfolio is deployed on Netlify and can be accessed [here](https://owens-portfolio.netlify.app/).
@@ -70,4 +70,4 @@ The portfolio is deployed on Netlify and can be accessed [here](https://owens-po
 This project is licensed under the MIT License. See the [LICENSE](LICENSE.md) file for details.
 
 ## Contact
-For any inquiries, please contact Ezekiel Owens at [Octozek@gmail.com](mailto:Octozek@gmail.com).
+For any inquiries, please contact Ezekiel Owens at [octozek@gmail.com](mailto:Octozek@gmail.com).
