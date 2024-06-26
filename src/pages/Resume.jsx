@@ -12,10 +12,10 @@ function Resume() {
         Download Resume
       </a>
       <h3>Proficiencies</h3>
-      <div className="proficiencies">
+      <div className="proficiency-section">
         <div className="proficiency-category">
           <h4>Front-end Proficiencies</h4>
-          <ul>
+          <ul className="proficiency-list">
             <li>HTML</li>
             <li>CSS</li>
             <li>JavaScript</li>
@@ -27,7 +27,7 @@ function Resume() {
         </div>
         <div className="proficiency-category">
           <h4>Back-end Proficiencies</h4>
-          <ul>
+          <ul className="proficiency-list">
             <li>APIs</li>
             <li>Node</li>
             <li>Express</li>
