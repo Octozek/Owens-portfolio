@@ -1,6 +1,6 @@
 const projects = [
   {
-    image: 'build/assets/images/WeatherWhiz.png',
+    image: 'assets/images/WeatherWhiz.png',
     repoLink: 'https://github.com/Octozek/WeatherWhiz',
     websiteLink: 'https://octozek.github.io/WeatherWhiz/',
     repoName: 'WeatherWhiz',
