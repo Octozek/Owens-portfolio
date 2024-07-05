@@ -27,6 +27,20 @@ const projects = [
     repoName: 'codequiz',
     websiteName: 'codequiz',
   },
+  {
+    image: '/src/assets/images/D-P.png',
+    repoLink: 'https://github.com/Octozek/daily-planner',
+    websiteLink: 'https://octozek.github.io/daily-planner/',
+    repoName: 'daily-planner',
+    websiteName: 'daily-planner',
+  },
+  {
+    image: '/src/assets/images/P-G.png',
+    repoLink: 'https://github.com/Octozek/passwordgenerator',
+    websiteLink: 'https://octozek.github.io/passwordgenerator/',
+    repoName: 'passwordgenerator',
+    websiteName: 'passwordgenerator',
+  },
   // Add more projects as needed
 ];
 
