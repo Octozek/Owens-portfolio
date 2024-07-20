@@ -27,15 +27,9 @@ const projects = [
     repoName: 'codequiz',
     websiteName: 'codequiz',
   },
+ 
   {
     image: 'assets/images/Co-Lab-img.png',
-    repoLink: 'https://github.com/Octozek/daily-planner',
-    websiteLink: 'https://octozek.github.io/daily-planner/',
-    repoName: 'daily-planner',
-    websiteName: 'daily-planner',
-  },
-  {
-    image: 'assets/images/P-G.png',
     repoLink: 'https://github.com/Octozek/Co-Lab',
     websiteLink: 'https://co-lab-tor3.onrender.com/',
     repoName: 'Co-Lab',
